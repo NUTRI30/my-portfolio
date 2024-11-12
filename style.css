@@ -293,8 +293,9 @@ margin: 25px 0;
   margin-bottom: 30px;
 
 }
-.service .boxes .box h3{
-  color: var(--main_color);
+
+.service .boxes .box .text h3 a{
+  color:white;
   font-size: 30xp;
   margin-bottom: 30px;
 }
@@ -304,7 +305,7 @@ margin: 25px 0;
   margin-bottom: 30px;
 }
 .service .boxes .box a{
-  color: var(--black_color);
+  color: var(--white_color);
   font-size: 20px;
   margin-bottom: 10px;
 }
@@ -325,6 +326,12 @@ margin: 25px 0;
   
 }
 .projects .project-box.project-box-2{
+  flex-direction: row-reverse;
+}
+.projects .project-box.project-box-3{
+  flex-direction: row-reverse;
+}
+.projects .project-box.project-box-4{
   flex-direction: row-reverse;
 }
 /* end project */
