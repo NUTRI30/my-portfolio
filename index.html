@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PORTFOLIO | AHMED AMIN</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="main" href="main.js" />
+    
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -26,8 +26,11 @@
     <header>
       <nav class="container">
         <a href="#" class="logo" img src="img/logo.png" alt="logo"></a>
-        <div class="links">
+        <div class="links" id="links">
+          <span class="close-menu" onclick="open_close_menu()"><i class="fa-solid fa-x"></i></span>
+
           <a href="#" class="active">home</a>
+          
           <a href="#">about</a>
           <a href="#">services</a>
           <a href="#">projects</a>
@@ -37,6 +40,7 @@
           <a href=""><i class="fa-brands fa-facebook"></i></a>
           <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
           <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <span class="icon-menu" onclick="open_close_menu()"><i class="fa-solid fa-bars"></i></span>
         </div>
       </nav>
     </header>
@@ -49,8 +53,7 @@
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ipsa
             corrupti aut nobis fugiat amet, quo quas veritatis? At magnam autem
-            sunt! Eaque atque consequuntur, distinctio exercitationem quia
-            recusandae eligendi.
+          
           </p>
           <div class="btns">
             <a href="#" class="btn">hire me</a>
@@ -68,24 +71,30 @@
         <div class="div_text">
           <h5>about me</h5>
           <h2>im developing apps that help people</h2>
-
           <p>
             Letur adipisicingnderit quasioribus. Natus incidunt non aliquam
             praesentium!
           </p>
+          <div class="div_img">
+            <img src="img/about.jpg" alt="" />
+          </div>
           <ul>
             <li><i class="fa-solid fa-check"></i>web developer</li>
+            <br>
+            <br>
             <li><i class="fa-solid fa-check"></i>web developer</li>
+            <br>
+            <br>
             <li><i class="fa-solid fa-check"></i>web developer</li>
+            <br>
+            <br>
             <li><i class="fa-solid fa-check"></i>web developer</li>
           </ul>
           <button class="btn">
             <a href="احمد جمال.pdf" download class="btn">download</a>
           </button>
         </div>
-        <div class="div_img">
-          <img src="img/about.jpg" alt="" />
-        </div>
+      
       </div>
     </section>
     <section class="service">
@@ -162,19 +171,20 @@
           <a href="#"><i class="fa-brands fa-instagram"></i>Instgram</a>
         </div>
       </div>
-      <form action="">
+      <form method="post"   action="https://api.sheetmonkey.io/form/w6U14286YenfySFGzR7eq1" >
         <div class="input-form">
-          <input type="text" placeholder="full name">
-          <input type="number" placeholder="mobile number">
-          <input type="text" placeholder="email ">
-          <input type="text" placeholder="subject">
-          <textarea name="" id="" rows="10" placeholder="your message here...."></textarea>
+          <input type="text" placeholder="full name" name="name" required>
+          <input type="number" placeholder="mobile number" name="phone" required>
+          <input type="text" placeholder="email " name="email" required>
+          <input type="text" placeholder="subject" name="subject"  required>
+          <textarea name="" id="" rows="10" placeholder="your message here...." name="message"></textarea> 
 
         </div>
-        <button class="btn">send message</button>
+        <button class="btn">submit</button>
       </form>
       </div>
       </div>
     </section>
+    <script src="main.js"></script>
   </body>
 </html>

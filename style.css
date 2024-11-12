@@ -113,6 +113,10 @@ header nav{
   height: 78px;
 
 }
+.close-menu,
+.icon-menu{
+  display: none;
+}
 header nav .logo img{
   width: 200px;
 
@@ -337,6 +341,7 @@ margin: 25px 0;
 .social-contacts .links{
   display: flex;
   flex-direction: column;
+
 }
 .social-contacts .links a{
   color: var(--white_color);
@@ -395,3 +400,192 @@ textarea{
   width: 100%;
 }
 /* end contact */
+
+/* START RESPONSIVE  */
+@media (max-width:1250px){
+  .container{
+    width: 90%;
+  }
+}
+@media (max-width:1000px){
+  header nav .links{
+    position: fixed;
+    top: 0;
+    flex-direction: column;
+    width:400px;
+    background: var(--black_color);
+    left: -400px;
+    padding: 50px 0;
+    height: 100%;
+    text-align: center;
+    transition:0.3s ease-in-out;
+
+
+  }
+  .hero .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .hero .div-img {
+    width: 80%;
+  margin-top: 100px;
+  }
+  .hero .container .div-text{
+    width: 80%;
+    text-align: center;
+  
+  }
+  .hero .container .div-text p{
+margin: 0 auto;
+  }
+  .btns{
+  justify-content: center;
+  margin-top: 30px;
+  }
+  header nav .links.active{
+    left: 0;}
+    .hero .div-img {
+      width: 50%;
+    margin-top: 100px;
+    height: auto;
+    }
+  
+  .close-menu{
+    display: block;
+    font-size: 28px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+  .icon-menu{
+    display: block;
+    font-size: 28px;
+  }
+}
+@media (max-width:500px) {
+  header nav .icons a{
+    font-size: 20px;
+  }
+  header nav .links{
+    width: 100%;
+    left: -100%;
+  }
+  .hero .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .hero .container .div-text{
+    justify-content: center;
+  }
+  .hero .container .div-text h1{
+font-size: 40px;
+width: 100%;
+text-align: center;
+  }
+
+  .hero .container .div-text h2{
+    font-size: 20px;
+  }
+  .hero .container .div-text p{
+    font-size: 15px;
+  }
+  .hero .container .div-text .btn{
+    background: var(--main_color);
+    padding: 10px 10px;
+    border-radius: 10px;
+    font-weight:400px;
+    text-transform:capitalize;
+    color: var(--black_color);
+  transition:  0.3s; 
+  text-align: center;
+  }
+  .hero .div-img {
+    width: 50%;
+  margin-top: 100px;
+  }
+ .hero .div-img .bg-img{
+    display: none;
+  }
+
+  .about .container{
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+  
+  .about .div_text h2{
+    font-size: 20px;
+    
+  
+  }
+
+  .about .div_text h5{
+  font-size: 14;
+  
+    
+  }
+  .about .div_text p{
+    font-size: 14px;
+  }
+  .about .div_img{
+  display: none;
+    
+  }
+  .about .div_text ul li{
+    width: 100%;
+    font-size: 14px;
+  }
+  /* start our service */
+  
+  .service .boxes .box a{
+    color: var(--black_color);
+    font-size: 10px;
+    margin-bottom: 5px;
+    width: 10%;
+  }
+  .service .boxes .box .btn{
+    background: var(--main_color);
+  padding: 5px 5px;
+  border-radius: 10px;
+  font-weight: 600px;
+  text-transform:capitalize;
+  color: var(--black_color);
+transition:  0.3s; 
+}
+
+  .service.boxes .box .btn{
+    font-size: 15px;
+    width: 20%;
+  }
+  .service .boxes .box p{
+    color: var(--white_color);
+    font-size: 10px;
+    margin-bottom: 30px;
+  }
+
+
+  /* start contact */
+  .contact .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .social-contacts .links{
+    display: flex;
+  
+    
+  }
+  .social-contacts .links a{
+    color: var(--white_color);
+    font-size: 10px;}
+  form{
+    width: 100%;
+  }
+
+}
