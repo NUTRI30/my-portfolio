@@ -125,14 +125,17 @@ header nav .links{
   display: flex;
   gap:40px ;
 }
-header .nav .links a{
-color: var(--white_color);
+header nav .links a{
+color:yellow;
 text-transform:capitalize ;
 font-size: 18px;
 
+
 }
 header nav .links a:hover{
-  color: var(--main_color);
+  scale: 1.5;
+  transition:0.3s ease-in-out;
+  
 }
 header nav .icons{
   display: flex;
@@ -266,6 +269,7 @@ margin: 25px 0;
   text-align: center;
   margin-bottom: 100px;
 }
+
 .top-section h2{
   font-size: 30px;
 }
