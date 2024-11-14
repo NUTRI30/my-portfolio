@@ -1,0 +1,25 @@
+/* start project */
+.project-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.project-box img{
+  width: 45%;
+}
+.project-box .text{
+  margin-right: 100px;
+  width: calc(50% - 100px);
+  
+}
+.projects .project-box.project-box-2{
+  flex-direction: row-reverse;
+}
+.projects .project-box.project-box-3{
+  flex-direction: row-reverse;
+}
+.projects .project-box.project-box-4{
+  flex-direction: row-reverse;
+}
+/* end project */
