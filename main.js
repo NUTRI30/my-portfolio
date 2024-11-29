@@ -1,5 +1,5 @@
 // add class active on scrol 
-let header = document.querySelector('header')
+// let header = document.querySelector('header')
 
 
 // show the menu on click
