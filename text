@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* start project */
 .project-box{
   display: flex;
@@ -22,4 +23,30 @@
 .projects .project-box.project-box-4{
   flex-direction: row-reverse;
 }
+=======
+/* start project */
+.project-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.project-box img{
+  width: 45%;
+}
+.project-box .text{
+  margin-right: 100px;
+  width: calc(50% - 100px);
+  
+}
+.projects .project-box.project-box-2{
+  flex-direction: row-reverse;
+}
+.projects .project-box.project-box-3{
+  flex-direction: row-reverse;
+}
+.projects .project-box.project-box-4{
+  flex-direction: row-reverse;
+}
+>>>>>>> 9cfba0af9c12ed6400076c70b60fe82fd0602c14
 /* end project */
